@@ -33,8 +33,7 @@
       </div>
 
       <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-        Ne soyez plus <span class="text-zinc-500 italic" style="font-family: Georgia, serif;">visible</span>.<br>
-        Devenez la <span class="text-amber-500">Référence</span>.
+        Devenez la <span class="text-amber-500">réponse évidente</span>.
       </h1>
 
       <p class="text-xl md:text-2xl text-zinc-400 mb-12 max-w-3xl mx-auto leading-relaxed">
@@ -42,11 +41,11 @@
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <button class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-zinc-950 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2 group">
+        <button onclick="navTo()" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-zinc-950 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer">
           Analyser mes vulnérabilités IA
           <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </button>
-        <button class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-lg text-zinc-300 hover:text-white border border-zinc-800 hover:border-zinc-600 transition-all duration-300 bg-zinc-900/50">
+        <button onclick="document.getElementById('offres').scrollIntoView({behavior:'smooth'})" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-lg text-zinc-300 hover:text-white border border-zinc-800 hover:border-zinc-600 transition-all duration-300 bg-zinc-900/50 cursor-pointer">
           Voir le système GEO
         </button>
       </div>
@@ -228,7 +227,7 @@
       <p class="text-xl text-zinc-400 mb-10">
         Arrêtez de brûler du cash en Ads pour compenser un SEO vieillissant. Faisons le point sur votre vulnérabilité algorithmique.
       </p>
-      <button class="bg-amber-500 hover:bg-amber-400 text-zinc-950 px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-3">
+      <button onclick="navTo()" class="bg-amber-500 hover:bg-amber-400 text-zinc-950 px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-3 cursor-pointer">
         Réserver un diagnostic stratégique
         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </button>
@@ -243,17 +242,20 @@
         Julien <span class="text-amber-500">Gourdon</span>
       </div>
       <div class="text-zinc-500 text-sm">
-        © <span id="year"></span> Julien Gourdon. Expert SEO & GEO pour SaaS B2B.
+        © <span id="year"></span> Julien Gourdon. <a href="https://julien-gourdon.fr/" class="hover:text-amber-500 transition-colors">Consultant SEO et GEO</a> pour SaaS B2B.
       </div>
       <div class="flex gap-4">
-        <a href="#" class="text-zinc-500 hover:text-amber-500 transition-colors">LinkedIn</a>
-        <a href="#" class="text-zinc-500 hover:text-amber-500 transition-colors">Malt</a>
+        <a href="https://www.linkedin.com/in/juliengourdon/" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-amber-500 transition-colors">LinkedIn</a>
+        <a href="https://www.malt.fr/profile/juliengourdon1" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-amber-500 transition-colors">Malt</a>
       </div>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    function navTo() {
+      window.location.href = atob('aHR0cHM6Ly9qdWxpZW4tZ291cmRvbi5mci8=');
+    }
   </script>
 </body>
 </html>
